@@ -1,3 +1,6 @@
+"""
+Crear un paquete de Python que contenga el proyecto de aprendizaje automático.
+"""
 # Importar el módulo setuptools para crear un paquete de Python
 import setuptools
 # Abrir el archivo README.md en modo de lectura y codificación utf-8
