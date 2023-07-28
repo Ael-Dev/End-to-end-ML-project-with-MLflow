@@ -59,3 +59,4 @@ for filepath in list_of_files:
     else:
         # registrar un mensaje informativo sobre la existencia del archivo
         logging.info(f"{filename} is already exists")
+# ------------------------------------------------------------------------------------------------
