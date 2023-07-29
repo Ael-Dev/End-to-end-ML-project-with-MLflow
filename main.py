@@ -19,6 +19,7 @@ Para cada etapa, se importa una clase que implementa el pipeline correspondiente
 from mlProject import logger
 from mlProject.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline # pipeline 1
 from mlProject.pipeline.stage_02_data_validation import DataValidationTrainingPipeline # pipeline 2
+from mlProject.pipeline.stage_03_data_transformation import DataTransformationTrainingPipeline # pipeline 3
 
 
 STAGE_NAME = "Data Ingestion stage"
@@ -31,9 +32,7 @@ except Exception as e:
         logger.exception(e)
         raise e
 
-
 # -------------------------------------------------------------------------
-
 
 STAGE_NAME = "Data Validation stage"
 try:
@@ -45,5 +44,17 @@ except Exception as e:
         logger.exception(e)
         raise e
 
+# -------------------------------------------------------------------------
+
+STAGE_NAME = "Data Transformation stage"
+try:
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
+   data_validation = DataTransformationTrainingPipeline()
+   data_validation.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
 
 # -------------------------------------------------------------------------
+
