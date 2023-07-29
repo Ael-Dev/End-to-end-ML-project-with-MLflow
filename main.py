@@ -15,8 +15,11 @@ de un modelo de aprendizaje automático. Estas etapas son:
 Para cada etapa, se importa una clase que implementa el pipeline correspondiente desde el paquete mlProject
 """
 
+# -------------------------------------------------------------------------
 from mlProject import logger
-from mlProject.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
+from mlProject.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline # pipeline 1
+from mlProject.pipeline.stage_02_data_validation import DataValidationTrainingPipeline # pipeline 2
+
 
 STAGE_NAME = "Data Ingestion stage"
 try:
@@ -27,5 +30,20 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+
+
+# -------------------------------------------------------------------------
+
+
+STAGE_NAME = "Data Validation stage"
+try:
+   logger.info(f">>>>>> stage {STAGE_NAME} started <<<<<<") 
+   data_validation = DataValidationTrainingPipeline()
+   data_validation.main()
+   logger.info(f">>>>>> stage {STAGE_NAME} completed <<<<<<\n\nx==========x")
+except Exception as e:
+        logger.exception(e)
+        raise e
+
 
 # -------------------------------------------------------------------------
