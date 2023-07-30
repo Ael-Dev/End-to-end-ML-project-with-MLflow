@@ -82,7 +82,7 @@ export MLFLOW_TRACKING_PASSWORD=4d8e8cc59acb74a838fddf2137352a54871976ab
 
 
 
-# AWS-CICD-Deployment-with-Github-Actions
+# AWS-CI/CD-Deployment-with-Github-Actions
 
 ## 1. Login to AWS console.
 
