@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Alex/Desktop/R/machine_learning/10.Projects/End-to-end-ML-project-with-MLflow/mlruns/0/ffee1e17b93342e89c46f3bcb1193847/artifacts
+end_time: 1690683702102
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ffee1e17b93342e89c46f3bcb1193847
+run_name: resilient-elk-457
+run_uuid: ffee1e17b93342e89c46f3bcb1193847
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690683691147
+status: 3
+tags: []
+user_id: Alex

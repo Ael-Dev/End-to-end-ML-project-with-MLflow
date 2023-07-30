@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Alex/Desktop/R/machine_learning/10.Projects/End-to-end-ML-project-with-MLflow/mlruns/0/61bc3bfe8693412bb822821f3ead7f13/artifacts
+end_time: 1690683272824
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 61bc3bfe8693412bb822821f3ead7f13
+run_name: crawling-grouse-35
+run_uuid: 61bc3bfe8693412bb822821f3ead7f13
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690683257487
+status: 3
+tags: []
+user_id: Alex
